@@ -1,0 +1,27 @@
+*.class
+.DS_Store
+
+# Package Files #
+*.war
+*.ear
+
+# Eclipse Files #
+.settings
+.project
+.classpath
+
+# IntelliJ IDEA Files #
+*.iml
+.idea
+
+# Maven Fields #
+target
+
+# Local Files #
+*.local.*
+*_local.*
+
+# Other Files #
+derby.log
+.rsa_key
+.secret

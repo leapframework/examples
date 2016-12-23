@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.leapframework.org/schema/config" xmlns:orm="http://www.leapframework.org/schema/orm/config">
+    <base-package>demo</base-package>
+    <debug>false</debug>
+    <property name="property1" override="true">override-property1</property>
+    <property name="property2" value="property2"></property>
+
+    <properties>
+        <property name="property3">property3</property>
+    </properties>
+
+    <properties prefix="prop">
+        <property name="property4">property4</property>
+    </properties>
+
+    <properties>
+        <property name="db.driverClassName">com.mysql.jdbc.Driver</property>
+        <property name="db.url">jdbc:mysql://localhost:3306/leaptest</property>
+        <property name="db.username">apigateway</property>
+        <property name="db.password">apigateway</property>
+    </properties>
+    <!--
+    <properties prefix="webmvc.json">
+        <property name="defaultSerializationKeyQuoted"></property>
+        <property name="defaultSerializationIgnoreNull"></property>
+        <property name="defaultSerializationIgnoreEmpty"></property>
+    </properties>
+    -->
+</config>
