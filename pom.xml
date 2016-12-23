@@ -13,6 +13,7 @@
         <module>web-bean</module>
         <module>web-listener</module>
         <module>web-datasource</module>
+        <module>web-filter-interceptor</module>
     </modules>
 
 

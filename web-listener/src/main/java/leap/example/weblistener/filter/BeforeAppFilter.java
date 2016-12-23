@@ -1,12 +1,8 @@
 package leap.example.weblistener.filter;
 
 import leap.core.AppContext;
-import leap.core.BeanFactory;
-import leap.core.annotation.Inject;
-import leap.example.weblistener.Global;
 import leap.lang.logging.Log;
 import leap.lang.logging.LogFactory;
-import leap.web.App;
 
 import javax.servlet.*;
 import java.io.IOException;
