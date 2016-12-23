@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>leap</title>
+</head>
+<body>
+    <h1>serviceBeans</h1>
+    <ul>
+        <!-- #for( bean : serviceBeans) -->
+        <li>${bean.getName()}</li>
+        <!-- #endfor -->
+    </ul>
+    
+    <hr/>
+    <h1>bean1</h1>
+    bean1.getName():${bean1.getName()}
+    <hr/>
+    <h1>bean2</h1>
+    bean2.getName():${bean2.getName()}
+    <hr/>
+    <h1>bean3</h1>
+    bean3.getName():${bean3.getName()}
+</body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.leapframework.org/schema/beans">
+
+    <bean name="bean2" type="leap.example.webbean.bean.ServiceBean" class="leap.example.webbean.bean.ServiceBean2">
+    </bean>
+
+</beans>

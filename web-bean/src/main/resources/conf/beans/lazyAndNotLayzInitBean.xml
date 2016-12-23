@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.leapframework.org/schema/beans">
+    <!-- use lazy-init="false" to specify this bean is not lazy init, it will be created at once app started -->
+    <bean class="leap.example.webbean.bean.NotLazyInitBean" lazy-init="false">
+    </bean>
+    <!-- bean is lazy init by default, it will be created when first used -->
+    <bean class="leap.example.webbean.bean.LazyInitBean">
+    </bean>
+
+</beans>
