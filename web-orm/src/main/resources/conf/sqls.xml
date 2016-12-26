@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls xmlns="http://www.leapframework.org/schema/sqls">
+
+    <command key="select-model1">
+        select * from t_model1 where name = :name
+    </command>
+</sqls>
