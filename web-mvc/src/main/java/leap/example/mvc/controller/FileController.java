@@ -10,9 +10,12 @@ import java.io.InputStream;
 
 /**
  * Created by kael on 2016/12/27.
+ * 
+ * 文件上传下载示例
+ * 
  */
 public class FileController {
-
+    
     public FileDownload download1() {
         File file = Resources.getResource("/download.txt").getFile();
         return new FileDownload(file);
