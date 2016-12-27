@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.leapframework.org/schema/beans">
+
+    <bean name="var" type="leap.core.variable.Variable" class="leap.example.mvc.variable.EnvVariable"/>
+    
+</beans>

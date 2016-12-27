@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.leapframework.org/schema/config" xmlns:el="http://www.leapframework.org/schema/el/config">
+    <base-package>leap.example.mvc</base-package>
+
+    <el:functions prefix="fc" class="leap.example.mvc.function.Function">
+        <el:function method="function(java.lang.String)"/>
+    </el:functions>
+
+</config>
