@@ -2,6 +2,7 @@ package leap.example.webbean.controller;
 
 import leap.core.BeanFactory;
 import leap.core.annotation.Inject;
+import leap.example.webbean.bean.CustomerBean;
 import leap.example.webbean.bean.LazyInitBean;
 import leap.example.webbean.bean.ServiceBean;
 import leap.lang.logging.Log;
@@ -32,6 +33,9 @@ public class HomeController extends ControllerBase {
     @Inject(name = "bean3")
     private ServiceBean bean3;
     
+    // custom factory
+    @Inject
+    private CustomerBean customerBean;
     
     public void index(ViewData vd){
         
@@ -40,6 +44,7 @@ public class HomeController extends ControllerBase {
         vd.put("bean2",bean2);
         vd.put("bean3",bean3);
         
+        vd.put("customerBean",customerBean);
         // first use LazyInitBean
         LazyInitBean lazyInitBean = factory.getBean(LazyInitBean.class);
 

@@ -3,5 +3,9 @@
 
     <bean name="bean1" type="leap.example.webbean.bean.ServiceBean" class="leap.example.webbean.bean.ServiceBean1">
     </bean>
-
+    
+    <bean type="leap.core.ioc.FactoryBean" class="leap.example.webbean.factory.CustomerFactoryBean">
+        <register-bean-factory target-type="leap.example.webbean.bean.CustomerBean"/>
+    </bean>
+    
 </beans>
