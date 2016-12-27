@@ -2,7 +2,6 @@
 <config xmlns="http://www.leapframework.org/schema/config" xmlns:orm="http://www.leapframework.org/schema/orm/config">
     <base-package>leap.example.orm</base-package>
     
-    
     <!-- common properties -->
     <properties>
         <property name="datasource.driverClass">org.h2.Driver</property>

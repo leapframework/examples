@@ -4,4 +4,31 @@
     <command key="select-model1">
         select * from t_model1 where name = :name
     </command>
+    
+    <command key="dynamic.sql1">
+        select * from t_model1 where 1=1
+        {?AND name=:name}
+        {?AND name=#name#}
+        {?AND name='$name$'}
+    </command>
+    
+    <command key="dynamic.sql2">
+        select * from t_model1 where 1=1
+        @if(name == null)
+            AND name is null
+        @elseif(name.equals("123"))
+            AND name = '123'
+        @else
+            AND name=:name
+        @endif
+    </command>
+    
+    <command key="dynamic.sql3">
+        select * from t_model1 where 1=1 @include(dynamic.fragment)
+    </command>
+    
+    <fragment key="dynamic.fragment">
+        AND name = :name
+    </fragment>
+    
 </sqls>
