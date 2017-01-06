@@ -5,9 +5,11 @@ import leap.core.annotation.Inject;
 import leap.example.webbean.bean.CustomerBean;
 import leap.example.webbean.bean.LazyInitBean;
 import leap.example.webbean.bean.ServiceBean;
+import leap.lang.enums.Bool;
 import leap.lang.logging.Log;
 import leap.lang.logging.LogFactory;
 import leap.web.action.ControllerBase;
+import leap.web.json.JsonSerialize;
 import leap.web.view.ViewData;
 
 import java.util.List;
@@ -36,7 +38,7 @@ public class HomeController extends ControllerBase {
     // custom factory
     @Inject
     private CustomerBean customerBean;
-    
+    @JsonSerialize(keyQuoted = Bool.FALSE)
     public void index(ViewData vd){
         
         vd.put("serviceBeans",serviceBeans);
