@@ -8,6 +8,8 @@ import leap.example.webbean.bean.ServiceBean;
 import leap.lang.enums.Bool;
 import leap.lang.logging.Log;
 import leap.lang.logging.LogFactory;
+import leap.web.Contents;
+import leap.web.Results;
 import leap.web.action.ControllerBase;
 import leap.web.json.JsonSerialize;
 import leap.web.view.ViewData;
@@ -51,5 +53,9 @@ public class HomeController extends ControllerBase {
         LazyInitBean lazyInitBean = factory.getBean(LazyInitBean.class);
 
         log.info(lazyInitBean.getClass().getName() + " has been created!");
+        
+        
+        request().getResult().setRenderable(Contents.text("success"));
+        Results.render(Contents.text("success"));
     }
 }
