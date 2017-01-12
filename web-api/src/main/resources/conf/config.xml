@@ -16,6 +16,16 @@
         <property name="db.password">${datasource.username}</property>
     </properties>
 
+    <!-- 配置公钥，作为oauth2的资源服务器时，用来校验jwt token使用 -->
+    <properties prefix="oauth2.rs">
+        <property name="rsaPublicKeyStr">
+            MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDASOjIWexLpnXiJNJF2pL6NzP
+            fBoF0tKEr2ttAkJ/7f3uUHhj2NIhQ01Wu9OjHfXjCvQSXMWqqc1+O9G1UwB2Xslb
+            WNwEZFMwmQdP5VleGbJLR3wOl3IzdggkxBJ1Q9rXUlVtslK/CsMtkwkQEg0eZDH1
+            VeJXqKBlEhsNckYIGQIDAQAB
+        </property>
+    </properties>
+    
     <!-- 自动创建数据库表，仅作测试时使用，请勿在生产环境中配置 -->
     <orm:config auto-create-tables="true"/>
 </config>

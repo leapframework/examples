@@ -2,8 +2,8 @@
 <apis xmlns="http://www.leapframework.org/schema/web/apis/apis">
     <global>
         <oauth enabled="true">
-            <authz-url>http://127.0.0.1:8080/auth/oauth2/authorize</authz-url>
-            <token-url>"http://127.0.0.1:8080/auth/oauth2/token</token-url>
+            <authz-url>http://localhost:8089/ssov3/oauth2/authorize</authz-url>
+            <token-url>http://localhost:8089/ssov3/oauth2/token</token-url>
         </oauth>
 
         <responses>
