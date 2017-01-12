@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.leapframework.org/schema/config" xmlns:orm="http://www.leapframework.org/schema/orm/config">
+    <base-package>leap.example.webapi</base-package>
+    <!-- common properties -->
+    <properties>
+        <property name="datasource.driverClass">org.h2.Driver</property>
+        <property name="datasource.username">sa</property>
+        <property name="datasource.password">sa</property>
+    </properties>
+
+    <!-- datasource properties -->
+    <properties prefix="default">
+        <property name="db.driverClassName">${datasource.driverClass}</property>
+        <property name="db.url">jdbc:h2:mem:default</property>
+        <property name="db.username">${datasource.username}</property>
+        <property name="db.password">${datasource.username}</property>
+    </properties>
+
+    <!-- 自动创建数据库表，仅作测试时使用，请勿在生产环境中配置 -->
+    <orm:config auto-create-tables="true"/>
+</config>

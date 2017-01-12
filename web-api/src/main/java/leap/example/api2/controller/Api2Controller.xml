@@ -1,0 +1,23 @@
+<description xmlns="http://www.leapframework.org/schema/web/apis/description">
+    <method name="get">
+        <summary>
+            get请求方法
+        </summary>
+        <description>
+            使用get请求调用，会返回一个200
+        </description>
+        <parameter name="id">
+            <description>主键</description>
+        </parameter>
+    </method>
+    <controller name="InnerController">
+        <method name="get">
+            <summary>
+                get请求方法
+            </summary>
+            <description>
+                内部控制器的get请求调用，会返回一个200
+            </description>
+        </method>
+    </controller>
+</description>

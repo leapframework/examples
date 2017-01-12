@@ -16,6 +16,7 @@
         <module>web-filter-interceptor</module>
         <module>web-orm</module>
         <module>web-mvc</module>
+        <module>web-api</module>
     </modules>
 
 

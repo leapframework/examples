@@ -1,6 +1,7 @@
 package leap.example.mvc.controller;
 
 import leap.web.Request;
+import leap.web.Response;
 import leap.web.Results;
 import leap.web.view.ViewData;
 
@@ -57,8 +58,9 @@ public class HomeController {
     /**
      * 这个action的访问路径是/redirect，这里自动重定向到/index
      */
-    public String redirect(){
+    public String redirect(Response response){
         // 多种方式重定向
+        // response.sendRedirect("/");
         // Results.redirect("/");
         return "redirect:/";
     }

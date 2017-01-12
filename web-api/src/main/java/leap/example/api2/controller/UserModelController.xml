@@ -1,0 +1,36 @@
+<description xmlns="http://www.leapframework.org/schema/web/apis/description">
+    <method name="queryUser">
+        <summary>
+            查询用户
+        </summary>
+        <description>
+            查询用户，并返回一个列表
+        </description>
+        <parameter name="options">
+            <properties>
+                <property name="pageSize">
+                    <description>分页大小</description>
+                </property>
+                <property name="pageIndex">
+                    <description>查询页码</description>
+                </property>
+            </properties>
+        </parameter>
+    </method>
+    <method name="createUser">
+        <summary>创建用户</summary>
+        <description>
+            根据指定参数创建用户
+        </description>
+    </method>
+    <method name="updateUser">
+        <summary>修改用户</summary>
+        <description>
+            根据参数增量修改用户
+        </description>
+    </method>
+    <method name="deleteUser">
+        <summary>删除用户</summary>
+        <description>根据id删除用户</description>
+    </method>
+</description>

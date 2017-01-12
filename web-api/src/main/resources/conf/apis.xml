@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apis xmlns="http://www.leapframework.org/schema/web/apis/apis">
+    <global>
+        <oauth enabled="true">
+            <authz-url>http://127.0.0.1:8080/auth/oauth2/authorize</authz-url>
+            <token-url>"http://127.0.0.1:8080/auth/oauth2/token</token-url>
+        </oauth>
+
+        <responses>
+
+            <response name="NotFound" status="404" type="leap.web.api.mvc.ApiError" desc="Resource not found"/>
+
+        </responses>
+
+        <parameters>
+            <param type="leap.web.api.mvc.params.QueryOptions">
+                <title>查询参数</title>
+                <desc>查询参数</desc>
+                <properties>
+                    <property name="pageSize">
+                        <title>页面大小</title>
+                        <desc>分页的每页大小</desc>
+                    </property>
+                </properties>
+            </param>
+        </parameters>
+
+    </global>
+    <api name="webapi" base-path="/webapi">
+        <version>1.0</version>
+        <title>webapi</title>
+    </api>
+
+    <api name="subpackageapi" base-path="/subpackage" base-package="leap.example.webapi.subapi">
+        <version>1.0</version>
+        <title>webapi</title>
+    </api>
+    
+    <api name="api1" base-path="/api1" base-package="leap.example.api1">
+        <oauth enabled="false"/>
+        <version>1.0</version>
+        <title>api1</title>
+    </api>
+    <api name="api2" base-path="/api2" base-package="leap.example.api2">
+        <version>1.0</version>
+        <title>api2</title>
+    </api>
+</apis>

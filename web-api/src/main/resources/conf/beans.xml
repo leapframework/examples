@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.leapframework.org/schema/beans">
+    <!-- default datasource, specify it is primary with primary="true" -->
+    <bean name="default" type="javax.sql.DataSource" class="leap.db.cp.PooledDataSource" primary="true">
+        <property name="driverClassName" value="${default.db.driverClassName}"></property>
+        <property name="jdbcUrl" value="${default.db.url}"></property>
+        <property name="username" value="${default.db.username}"></property>
+        <property name="password" value="${default.db.password}"></property>
+        <property name="maxWait" value="30000"></property>
+        <property name="maxActive" value="50"></property>
+    </bean>
+
+</beans>
