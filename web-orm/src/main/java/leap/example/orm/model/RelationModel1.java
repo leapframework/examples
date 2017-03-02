@@ -1,6 +1,7 @@
 package leap.example.orm.model;
 
 import leap.orm.annotation.Id;
+import leap.orm.annotation.NonColumn;
 import leap.orm.model.Model;
 
 /**
@@ -9,6 +10,7 @@ import leap.orm.model.Model;
 public class RelationModel1 extends Model {
     @Id
     private String r1id;
+    
     private String r1name;
 
     public String getR1id() {

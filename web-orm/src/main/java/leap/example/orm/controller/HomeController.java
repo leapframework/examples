@@ -1,7 +1,9 @@
 package leap.example.orm.controller;
 
+import leap.core.annotation.Transactional;
 import leap.core.value.Record;
 import leap.example.orm.model.*;
+import leap.lang.value.Page;
 import leap.orm.dao.Dao;
 import leap.orm.mapping.EntityMapping;
 import leap.web.action.ControllerBase;
@@ -219,5 +221,4 @@ public class HomeController extends ControllerBase {
         System.out.println(m1s.size());
         return "ok";
     }
-    
 }

@@ -2,7 +2,7 @@ package leap.example.mvc.controller;
 
 import leap.web.Request;
 import leap.web.Response;
-import leap.web.Results;
+import leap.web.action.ControllerBase;
 import leap.web.view.ViewData;
 
 /**
@@ -11,7 +11,7 @@ import leap.web.view.ViewData;
  * 默认的index控制器，控制器的访问根路径是{@code /},对应的视图目录是{@code WEB-INF/views/}
  * 
  */
-public class HomeController {
+public class HomeController extends ControllerBase {
 
     /**
      * 这个action的访问路径是 / 或 /index
