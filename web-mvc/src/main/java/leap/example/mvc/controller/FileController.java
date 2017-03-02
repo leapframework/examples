@@ -36,6 +36,9 @@ public class FileController {
      */
     public String upload(MultipartFile file) {
         try {
+            if(file == null){
+                return "file is null";
+            }
             InputStream is = file.getInputStream();
             do {
                 int i = is.read();
